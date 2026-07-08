@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Animated Temperature Converter</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+    <h1>
+        🌡️ Temperature Converter
+    </h1>
+
+
+    <p class="subtitle">
+        Smart Weather Temperature System
+    </p>
+
+
+
+
+    <div class="main-card">
+
+
+
+        <!-- LEFT SIDE -->
+
+        <div class="converter">
+
+
+            <label>
+                Enter Temperature
+            </label>
+
+
+            <input 
+            type="number"
+            id="temperature"
+            placeholder="Enter value">
+
+
+
+            <label>
+                Select Unit
+            </label>
+
+
+            <select id="unit">
+
+
+                <option value="celsius">
+                    Celsius °C
+                </option>
+
+
+                <option value="fahrenheit">
+                    Fahrenheit °F
+                </option>
+
+
+                <option value="kelvin">
+                    Kelvin K
+                </option>
+
+
+            </select>
+
+
+
+
+            <div class="buttons">
+
+
+                <button id="convert">
+                    Convert
+                </button>
+
+
+
+                <button id="reset">
+                    Reset
+                </button>
+
+
+            </div>
+
+
+
+
+            <div class="result-box">
+
+
+                <h2>
+                    Result
+                </h2>
+
+
+                <h3 id="result">
+                    0 °C
+                </h3>
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+
+        <!-- RIGHT SIDE -->
+
+
+        <div class="weather">
+
+
+            <div id="weather-icon">
+                🌡️
+            </div>
+
+
+            <h2 id="weather-status">
+                Waiting...
+            </h2>
+
+
+
+            <p>
+                Temperature Meter
+            </p>
+
+
+
+            <!-- Thermometer -->
+
+
+            <div class="thermometer">
+
+
+                <div class="tube">
+
+
+                    <div id="mercury">
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="bulb">
+
+                </div>
+
+
+            </div>
+
+
+
+            <h2 id="thermo-value">
+                0°C
+            </h2>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Converted Values -->
+
+
+    <div class="values">
+
+
+
+        <div class="value-card">
+
+            <h3>
+                Celsius
+            </h3>
+
+            <p id="celsius-value">
+                0°C
+            </p>
+
+        </div>
+
+
+
+
+        <div class="value-card">
+
+            <h3>
+                Fahrenheit
+            </h3>
+
+            <p id="fahrenheit-value">
+                32°F
+            </p>
+
+        </div>
+
+
+
+
+        <div class="value-card">
+
+            <h3>
+                Kelvin
+            </h3>
+
+            <p id="kelvin-value">
+                273K
+            </p>
+
+        </div>
+
+
+
+    </div>
+
+
+
+</div>
+
+
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
