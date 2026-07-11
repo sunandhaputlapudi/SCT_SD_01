@@ -62,6 +62,7 @@ document.getElementById("thermo-value");
 
 
 
+
 // ===============================
 // CONVERT BUTTON
 // ===============================
@@ -193,6 +194,11 @@ function convertTemperature(){
     // Change weather
 
     updateWeather(celsius);
+
+    document.querySelector(".result-box").scrollIntoView({
+    behavior: "smooth",
+    block: "center"
+});
 
 
 
@@ -479,3 +485,5 @@ function resetAll(){
 
 
 }
+
+

@@ -19,9 +19,9 @@ body{
     background:
     linear-gradient(
         135deg,
-        #dbeafe,
-        #e0e7ff,
-        #f0fdf4
+        #e0f7fa,
+        #b2ebf2,
+        #80deea
     );
 
     color:#1e293b;
@@ -37,12 +37,12 @@ body{
 
 body.dark{
 
-    background:
+   background:
     linear-gradient(
         135deg,
-        #020617,
-        #0f172a,
-        #1e293b
+        #06283D,
+        #13678A,
+        #1E88A8
     );
 
     color:white;
@@ -124,10 +124,8 @@ h1{
 
 
 
-    background:
-
-    rgba(255,255,255,0.55);
-
+   background:
+    rgba(240,255,255,0.65);
 
 
     backdrop-filter:blur(15px);
@@ -199,7 +197,7 @@ select{
     outline:none;
 
 
-    background:#ffffff;
+   background:#f4feff;
 
     font-size:16px;
 
@@ -268,12 +266,11 @@ button{
     cursor:pointer;
 
 
-    background:
-
+   background:
     linear-gradient(
         135deg,
-        #2563eb,
-        #7c3aed
+        #009688,
+        #26c6da
     );
 
 
@@ -304,12 +301,11 @@ button:hover{
 #reset{
 
 
-    background:
-
+   background:
     linear-gradient(
         135deg,
-        #ef4444,
-        #f97316
+        #ff7043,
+        #ff9800
     );
 
 }
@@ -360,7 +356,7 @@ body.dark .result-box{
 
     font-size:32px;
 
-    color:#2563eb;
+    color:#00838f;
 
 }
 
@@ -494,11 +490,10 @@ body.dark .result-box{
 
 
     background:
-
     linear-gradient(
-        top,
-        #ef4444,
-        #dc2626
+        to top,
+        #00acc1,
+        #006064
     );
 
 
@@ -525,7 +520,7 @@ body.dark .result-box{
     height:70px;
 
 
-    background:#ef4444;
+    background:#00acc1;
 
 
     border-radius:50%;
@@ -547,7 +542,7 @@ body.dark .result-box{
 
     font-size:30px;
 
-    color:#ef4444;
+    color:#00838f;
 
 }
 
@@ -597,10 +592,8 @@ body.dark .result-box{
     border-radius:18px;
 
 
-    background:
-
-    rgba(255,255,255,0.6);
-
+   background:
+    rgba(240,255,255,0.75);
 
     box-shadow:
 
@@ -642,21 +635,37 @@ body.dark .value-card{
 
 .mode-toggle{
 
+    position:fixed;
 
-    position:absolute;
+    top:20px;
 
-    top:25px;
+    right:20px;
 
-    right:30px;
+    padding:12px 18px;
 
-
-    padding:10px 15px;
-
+    border:none;
 
     border-radius:50px;
 
+    background:linear-gradient(135deg,#009688,#26c6da);
+
+    color:white;
+
+    font-weight:bold;
+
     cursor:pointer;
 
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+
+    transition:.3s;
+
+    z-index:1000;
+
+}
+
+.mode-toggle:hover{
+
+    transform:scale(1.05);
 
 }
 
